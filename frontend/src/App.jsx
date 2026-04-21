@@ -25,7 +25,7 @@ function App() {
             <h2 className="text-xl font-bold">{resume.title}</h2>
             <p className="text-gray-600">{resume.summary}</p>
             <div className="mt-4 flex flex-wrap gap-2">
-              {resume.skills.map((skill) => (
+              {resume.skills.map((index, skill) => (
                 <span
                   key={skill.name}
                   className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
